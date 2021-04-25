@@ -2,9 +2,68 @@
   box-sizing: border-box;
 }
 
+html {
+  background: url(attachments/paul-earle-wVjd0eWNqI8-unsplash.jpg) no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0%;
   height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.common {
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  border: #a19595;
+}
+
+nav {
+  margin: 15px;
+  background: #f9f9f9;
+  padding: 5px;
+}
+
+.menuItems {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -webkit-padding-start: 0;
+}
+
+li {
+  margin: 5px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+li > a {
+  text-decoration: none;
+  color: #a19595;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.pic {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -13,47 +72,22 @@ body {
 }
 
 .intro {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to bottom, rgba(185, 255, 119, 0.5), rgba(0, 217, 255, 0.5)),
-  url('https://mdn.mozillademos.org/files/7693/catfront.png');
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-left: 5px dashed whitesmoke;
 }
 
-.experience {
-  height: 300px;
-  margin-left: 15%;
-  margin-right: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills {
-  height: 300px;
-  margin-left: 15%;
-  margin-right: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.projects {
-  height: 300px;
-  margin-left: 15%;
-  margin-right: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.details {
+  color: #26272b;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .site-footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color:#26272b;
+  background-color: #26272b;
   padding: 20px 0 20px;
   font-size: 15px;
   display: flex;
@@ -68,26 +102,22 @@ body {
   }
 
   .intro {
-    
   }
 
   .experience {
-    
   }
 
   .skills {
-
   }
 
   .projects {
-
   }
-  
+
   .site-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color:#26272b;
+    background-color: #26272b;
     padding: 20px 0 20px;
     font-size: 15px;
     display: flex;
