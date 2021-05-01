@@ -3,9 +3,15 @@
 }
 
 html {
-  /* background: url(attachments/paul-earle-wVjd0eWNqI8-unsplash.jpg) no-repeat
+  /* background: url(attachments/resul-mentes-DbwYNr8RPbg-unsplash.jpg) no-repeat
     center center fixed; */
-  background-color: #f9f9f9;
+  background: rgb(242, 239, 239);
+  background: linear-gradient(
+    90deg,
+    rgba(242, 239, 239, 1) 5%,
+    rgba(246, 237, 211, 1) 48%,
+    rgba(189, 244, 255, 1) 100%
+  );
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,9 +27,6 @@ body {
 }
 
 .common {
-  margin-left: 15%;
-  margin-right: 15%;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,14 +79,15 @@ li {
 .sideHeading {
   margin-left: 2%;
   font-size: 28px;
-  margin-top: 3%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column-reverse;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: darkred;
+  color: #141313;
 }
 
 .intro {
+  margin: 5% 5%;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -98,24 +102,38 @@ details > h1 {
 }
 
 .rowCommon {
-  border: 1px solid grey;
+  border: 2px solid #bada89;
   margin: 2%;
-  border-radius: 5%;
-  display: grid;
+  border-radius: 20px;
   color: #141313;
+  font-size: 18px;
 }
 
 .experience {
-  padding: 2% 10%;
+  padding: 4% 5%;
+  display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
 .skills {
-  padding: 2% 10%;
-  grid-template-columns: 1fr 2fr;
+  padding: 2% 5%;
+  align-items: center;
+}
+
+.skillImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skillImages > img {
+  flex: 0 0 10%;
+  margin: 2%;
 }
 
 .row {
+  min-height: 40px;
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
@@ -134,8 +152,23 @@ details > h1 {
 
 /* small devices */
 @media (max-width: 700px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
   .content {
     display: block;
+    height: 100%;
+  }
+
+  .nav {
+    width: 100%;
   }
 
   li > a {
@@ -151,8 +184,41 @@ details > h1 {
     font-size: 28px;
   }
 
-  pic {
-    align-self: start;
+  .intro {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .pic {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+  }
+
+  .row img {
+    height: 50px;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    padding: 2% 5%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .site-footer {
