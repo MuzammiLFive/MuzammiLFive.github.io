@@ -3,96 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Muzammil Hussain's Portfolio</title>
   </head>
+
   <body>
-    <!-- <div class="header">header</div> -->
-    <div class="content">
-      <nav>
-        <ul class="menuItems">
-          <li><a href="#experience">experience</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#about">about</a></li>
-        </ul>
+    <nav>
+      <ul>
+        <li><h1><a href="index.html"> 
+          <span class="fas fa-code" aria-hidden="true"></span>   Muzammil Hussain</a></h1></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/muzammilfive" target="_blank"> 
+        <span class="fab fa-linkedin" aria-hidden="true"></span>  <span class="sr-only">LinkedIn</span>
+        </a>
+          
+        </li>
+      <li><a href="https://github.com/MuzammiLFive" target="_blank">  <span class="fab fa-github" aria-hidden="true"></span>  <span class="sr-only">Github</span></a></li>
+        <li><a href="https://www.dropbox.com/s/8kwvzspxmw5nfst/Muzammil%20Hussain.pdf?dl=0" target="_blank" class="button">Resume</a></li>
+      </ul>
       </nav>
 
-      <!-- INTRODUCTION -->
-      <div class="intro common" id="intro">
-        <div class="details">
-          <h1 style="font-size: 38px;">MUZAMMIL HUSSAIN</h1>
-          <h3>I'm a Full-Stack Software Engineer.</h2>
-        </div>
-        <div class="pic">
-          <img
-            style="border-radius: 15%"
-            src="/attachments/IMG-1492-2.jpg"
-            width="180px"
-          />
-        </div>
-      </div>
-
-      <!-- EXPERIENCE -->
-      <div class="sideHeading" id="experience">Experience</div>
-      <div class="experience rowCommon">
-        <div>
-          <span><img src="./attachments/DBS_Bank_logo.png" alt="" style="width: 150px;"></span><br>
-          <span><b>Company</b> : DBS Bank</span><br>
-          <span><b>Role</b> : Application Developer</span><br>
-          <span><b>Tenure</b> :September 2020 - present</span>
-        </div>
-        <div style="align-self: flex-start;">
-          <ul>
-            <li>Contributed my skills towards developing full-stack web applications to substitute the loan
-              processing method from paper-based to digital.</li>
-            <li>Developed reusable web components using Lit Element and TypeScript.</li>
-            <li>Automated sending email notifications to users with Spring Boot's Thymeleaf library</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- SKILLS -->
-      <span class="sideHeading" id="skills">Skills</span>
-      <div class="skills rowCommon">
-        <div class="row">
-          <div class="heading" style="align-self: center; font-weight: 600;">Front-End</div>
-          <div class="skillImages">
-            <img src="./attachments/html5.png" height="100px">
-            <img src="./attachments/javascript.png" height="100px">
-            <img src="./attachments/css3.png" height="100px">
-            <img src="./attachments/typescript.png" height="100px">
-            <img src="./attachments/bootstrap.png" height="100px">
-            <img src="./attachments/lit-element.png" height="100px">
-            <img src="./attachments/angular.png" height="100px">
-          </div>
-        </div>
-        <div class="row" style="margin-top: 20px; font-weight: 600;">
-          <div class="heading" style="align-self: center;">Back-End</div>
-          <div class="skillImages">
-            <img src="./attachments/spring-boot-logo.png" height="100px">
-            <img src="./attachments/java-logo.png" height="100px">
-            <img src="./attachments/Kotlin_logo..png" height="40px">
-            <img src="./attachments/mysql.png" height="100px">
-          </div>
-        </div>
-        <div class="row" style="margin-top: 20px; font-weight: 600;">
-          <div class="heading" style="align-self: center;">Others</div>
-          <div class="skillImages">
-            <img src="./attachments/github.png" height="100px">
-            <img src="./attachments/git.png" height="100px">
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECTS -->
-      <div class="common" id="projects">PROJECTS</div>
-
-      <!-- FOOTER -->
-      <footer class="site-footer" id="about">
-        A Portfolio for myself.
-      </footer>
-    </div>
+    <section id="intro">
+      <p class="name">Hi, my name is <span>Muzammil Hussain.</span></p>
+      <h2>I develop full stack web applications.</h2>
+      <p>I'm a developer specializing in Web components and Spring boot.</p>
+      <p>
+        Currently, I'm working at
+        <a href="https://www.dbs.com/asia-hub-2/index.html" target="_blank"
+          >DBS Bank</a
+        >.
+      </p>
+      <p></p>
+    </section>
+    <div class="gradient"></div>
+    <div class="section-plum">
+    <section id="contact">
+      <h2>Contact me</h2>
+      </p>I'm always interested in hearing about new opportunities and similar interests.</p>
+    <p><a href="mailto:muzammil@example.com" class="button">Email me</a></p>
+    </section>
+    <div class="gradient"></div>
+  </div>
+      <footer>
+        <h2>Muzammil Hussain &middot; Full Stack Developer</h2>
+      
+      <ul>
+        <li><a href="https://www.linkedin.com/in/muzammilfive" target="_blank"> 
+        <span class="fab fa-linkedin" aria-hidden="true"></span>  <span class="sr-only">LinkedIn</span>
+        </a>  
+        </li>
+        <li><a href="https://github.com/MuzammiLFive" target="_blank">  <span class="fab fa-github" aria-hidden="true"></span>  <span class="sr-only">Github</span></a></li>
+        <li><a href="mailto:muzammil@example.com" target="_blank">  <span class="fas fa-envelope" aria-hidden="true"></span>  <span class="sr-only">Mail</span></a></li>
+      </ul>
+      
+        <p><small>&copy; 2022 Muzammil Hussain. All rights reserved.</small></p>
+        </footer>
   </body>
 </html>
